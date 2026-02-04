@@ -12,6 +12,23 @@ Constraints:
 Hint: Use Sliding Window variable.
 
 """
+# brute force solution
+string = input()
+max_len = 0
+for i in range(len(string)):
+    seen = set()
+    current = 0
+    for j in range(i,len(string)):
+        if string[j] in seen:
+            break
+        else:
+            seen.add(string[j])
+            current += 1
+    max_len = max(max_len, current)
+print(max_len)
+
+
+# Optimal solution using sliding window
 string = input()
 seen = set()
 left = 0
