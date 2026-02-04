@@ -8,6 +8,19 @@ Constraints: 1<=n<=10^5
 Hint: Use Sliding Window Fixed.
 """
 
+# brute force solution
+array = list(map(int,input().split()))
+k = 3
+max_sum = 0
+for i in range(len(array)-k+1):
+    window_sum = 0
+    for j in range(i,i+k):
+        window_sum += array[j]
+    max_sum = max(window_sum,max_sum)
+
+print(max_sum)
+
+# Optimal Solution using sliding window
 ls = list(map(int,input().split()))
 k = 3
 window_sum = sum(ls[:k])
@@ -18,4 +31,6 @@ for right in range(k,len(ls)):
     max_sum = max(max_sum, window_sum)
 
 print(max_sum)
+
+
 
