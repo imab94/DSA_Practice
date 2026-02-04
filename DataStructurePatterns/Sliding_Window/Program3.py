@@ -5,6 +5,7 @@ Input:
 arr= [1,2,3,4], k = 2
 Output: [1.5,2.5,3.5]
 Constrainst: 1<=n<=10^5
+Hint: Use Sliding Window Fixed.
 """
 ls = list(map(int,input().split()))
 k = 2

@@ -5,6 +5,7 @@ Input:
 arr = [1,2,3,4,5,6] for k = 3
 Output: 15 (4+5+6)
 Constraints: 1<=n<=10^5
+Hint: Use Sliding Window Fixed.
 """
 
 ls = list(map(int,input().split()))

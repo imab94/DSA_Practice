@@ -11,6 +11,8 @@ Output:
 
 Constraints:
 1<=n<=10^5
+Hint: use sliding window variable, it's obvious when using
+sliding window variable, while loop will be there for condition.
 """
 string = input()
 max_len = 0

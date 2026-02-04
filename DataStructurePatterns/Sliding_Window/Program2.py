@@ -4,6 +4,7 @@ Input:
 arr = [3,2,1,5,6] for window size k = 2
 Output: 3
 Constraints: 1<=n<=10^5
+Hint: Use Sliding Window Fixed.
 """
 ls = list(map(int,input().split()))
 k = 2

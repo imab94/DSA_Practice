@@ -9,6 +9,7 @@ s = "abcabcbb"
 Output: 3
 Constraints:
 1<=n<=10^5
+Hint: Use Sliding Window variable.
 
 """
 string = input()
